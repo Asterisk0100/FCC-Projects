@@ -1,5 +1,5 @@
 function palindrome(str) {
-    let regex = /[_\s,.\(:\-\/\\\)]/g;
+    let regex = /[^a-z\d]/gi;
     str.replace(regex, "");
     let origArray = str.replace(regex, "").split("");
     let newArray = [];
